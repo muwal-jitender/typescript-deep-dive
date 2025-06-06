@@ -5,6 +5,9 @@ type MoneyProps = { amount: number; currency: Currency };
 
 export class Money extends ValueObject<MoneyProps> {
   constructor(props: MoneyProps) {
+    if (props.amount <= 0) {
+      throw new Error('Amount cannot be zero');
+    }
     super(props);
   }
 

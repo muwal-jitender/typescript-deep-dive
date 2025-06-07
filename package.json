@@ -14,6 +14,9 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@ai-sdk/google": "^1.2.19",
+    "ai": "^4.3.16",
+    "dotenv": "^16.5.0",
     "lodash.isequal": "^4.5.0"
   }
 }
